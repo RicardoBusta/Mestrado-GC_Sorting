@@ -1,0 +1,52 @@
+body {
+	background-color: #111;
+	color: #fff;
+}
+
+#root {
+	background-color: #222;
+	margin: auto;
+	max-height: 80%;
+	min-height: 80%;
+	vertical-align: bottom;
+	display: block;
+}
+
+#output {
+	color: #ddd;
+	background-color: #222;
+	max-height: 80%;
+	min-height: 80%;
+	width: 100%;
+	margin: auto;
+	vertical-align: top;
+	display: block;
+	border: 0px;
+}
+
+.bar{
+	background-color: #999;
+	margin: auto;
+	display: inline-block;
+	vertical-align: bottom;
+}
+.bar:hover{
+	background-color: white;
+	color: #000;
+}
+
+.selected{
+	background-color: #050;
+}
+
+.selected2{
+	background-color: #080;
+}
+
+.pivot{
+	background-color: #f00;
+}
+
+.verified{
+	background-color: #0A0;
+}

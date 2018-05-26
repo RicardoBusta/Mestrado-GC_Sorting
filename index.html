@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title> Sorting Algorithms - Ricardo Bustamante de Queiroz - Universidade Federal do Cear&aacute; </title>
+		<script type="text/javascript" src="sort_algorithm.js"></script>
+		<link rel="stylesheet" type="text/css" href="sort_algorithm.css" />
+	</head>
+	<body onload="onLoadFunction();">
+
+		Control:
+		<div id="inputControl">
+			<select id="selectAlgorithm" class="parameters" onchange="setAlgorithm(this.value)">
+				<option value="selection" selected>Selection Sort</option>
+				<option value="merge">Merge Sort</option>
+				<option value="quick">Quick Sort</option>
+			</select>
+
+			<select id="selectSize" onchange="resize(this.value);">
+				<option value="5">5 elements</option>
+				<option value="10">10 elements</option>
+				<option value="20">20 elements</option>
+				<option value="30" selected>30 elements</option>
+				<option value="40">40 elements</option>
+				<option value="50">50 elements</option>
+				<option value="100">100 elements</option>
+				<option value="1000">1000 elements</option>
+			</select>
+
+			<input type="button" onclick="startSort();" value="go" id="go" />
+			<input type="button" onclick="shuffle();" value="shuffle" id="shuffle" />
+		
+			<input type="button" onclick="outputClear();" value="clear" id="clear"/>
+			Step Count: <input type="text" id="stepCount" value="0" readonly />
+		</div>
+
+		<!-- Here the bars will be displayed -->
+		<div id="root"></div>
+		<!-- Here the output will be displayed -->
+		Output:
+		<textarea id="output" readonly></textarea>
+	</body>
+</html>
